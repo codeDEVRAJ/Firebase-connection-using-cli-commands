@@ -10,7 +10,7 @@ flutter pub get
 
 
 *************************************************************
-____ if flutter configure gives error then use this____
+____ if "flutter configure" gives error then use this____
 
 -----------*********************-----------------------
 
@@ -51,6 +51,7 @@ for sha keys
 cd android
 
 ./gradlew signingReport
+
 
 
 
