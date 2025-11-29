@@ -1,0 +1,54 @@
+firebase cli  commands
+npm install -g firebase-tools
+firebase login
+dart pub global activate flutterfire_cli
+flutterfire configure
+flutter pub add firebase_core
+flutter pub get
+
+
+*************************************************************
+____ if flutter configure gives error then use this____
+
+-----------*********************-----------------------
+
+$env:path +=";c:\Users\devraj honmane\AppData\Local\Pub\Cache\bin"
+
+
+or similar to this command 
+
+dont execute as it is check it in your file explorer for this file ok
+-------------*****************----------------
+
+***************************************************************
+
+
+
+steps after successful connection:- 
+
+in Main file replace
+
+ void main(){
+}
+
+to 
+
+
+Future<void> main() async{
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform
+  );
+  runApp(const MyApp());
+}
+
+
+
+for sha keys 
+
+cd android
+
+./gradlew signingReport
+
+
+
