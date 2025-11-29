@@ -1,4 +1,6 @@
-firebase cli  commands
+firebase cli  commands :-    
+
+
 npm install -g firebase-tools
 firebase login
 dart pub global activate flutterfire_cli
@@ -49,6 +51,7 @@ for sha keys
 cd android
 
 ./gradlew signingReport
+
 
 
 
